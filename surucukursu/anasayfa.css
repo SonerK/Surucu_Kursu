@@ -1,0 +1,85 @@
+
+    body {
+      background-color: lightblue;
+      text-align: center;
+    }
+    h1, h2 {
+      color: navy;
+    }
+    
+    p {
+      font-family: verdana;
+      font-size: 20px;
+      /* hareketli resim için css kodları*/ 
+    }
+    #slider img {
+  width: 1000px;
+  height: 500px;
+  
+}
+#slider .slide {
+  display: none;
+}
+   /* navbar için css kodları*/
+    nav {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff7550;
+      padding: 10px 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: navy;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: lightblue;
+    }
+    nav img {
+      height: 50px;
+      margin-left: 20px;
+    }
+    nav .nav-items {
+      display: flex;
+      align-items: center;
+    }
+    nav .nav-items a {
+      margin-right: 20px;
+    }
+    
+    .nav-panel {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: #ff7550;
+      border: 1px solid navy;
+      padding: 20px;
+    }
+    .nav-panel a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .nav-toggle {
+      display: none;
+      cursor: pointer;
+      color: navy;
+      font-size: 30px;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      nav .nav-items {
+        display: none;
+      }
+      .nav-toggle {
+        display: block;
+      }
+    }
+  
+  
